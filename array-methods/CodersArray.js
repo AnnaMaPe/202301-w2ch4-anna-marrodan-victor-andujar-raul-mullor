@@ -1,7 +1,10 @@
 class CodersArray {
-  length;
   constructor(...items) {
-    this.items = items;
+    let index = 0;
+    for (const item of items) {
+      this[index] = item;
+      index++;
+    }
   }
 }
 
